@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Text Extension</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+      body {
+        background: #f5f5f5;
+        padding: 20px;
+      }
+
+      #summarize, #rewrite {
+        min-width: 200px;
+        height: 50px;
+        font-size: 1.2em;
+        margin-bottom: 15px;
+      }
+
+      .card {
+        box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.1);
+      }
+    </style>
+  </head>
+  <body>
+    <a href="options.html" target="_blank" class="mb-4 d-inline-block">Add API Key here</a>
+    <div class="card p-4">
+      <div id="selected-text" class="text-center mb-4"></div>
+      <div class="d-flex flex-column align-items-center">
+        <button id="summarize" class="btn btn-primary">Summarize</button>
+        <button id="rewrite" class="btn btn-secondary">Rewrite</button>
+      </div>
+    </div>
+  
+
+    <script src="popup.js"></script>
+  </body>
+</html>
